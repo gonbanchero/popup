@@ -6,53 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-
-    <title>Document</title>
+    <title>Popup</title>
 </head>
 
 <body>
 
     <div class="califica">
-        <button id="boton">👉 ¿Qué te pareció nuestra web?</button>
+        <button class="califica_btn">👉 ¿Qué te pareció nuestra web?</button>
     </div>
 
-    <article class="container hidden" id="popup">
-
-        <div class="popup">
-
-            <div class="svg">
-                <img id="cerrar" src="img/close.svg" alt="" class="svg">
-            </div>
-            <div class="popup-container">
+    <main class="container">
+        <div class="popup_container hidden">
+            <div class="popup-items">
+                <div class="svg">
+                    <img src="img/close.svg" alt="" class="svg">
+                </div>
                 <h3 class="titulo">¿Cómo te sentiste con el soporte de Federico?</h3>
 
-                <section id="botones" class="botonera">
-                    <button id="1">1</button>
-                    <button id="2">2</button>
-                    <button id="3">3</button>
-                    <button id="4">4</button>
-                    <button id="5">5</button>
+                <section class="botonera">
+                    <button class="boton">1</button>
+                    <button class="boton">2</button>
+                    <button class="boton">3</button>
+                    <button class="boton">4</button>
+                    <button class="boton">5</button>
                 </section>
 
                 <div class="leyenda">
                     <p>Bastante <span>insastifecho</span></p>
                     <p class="derecha">Extremadamente <span>satisfecho</span></p>
-
                 </div>
 
                 <div class="tyc">
-                    <input type="checkbox">
+                    <input type="checkbox" class="checkbox">
                     <p>Acepto los términos y uso</p>
                 </div>
 
                 <div class="separador"></div>
 
                 <button class="siguiente">Siguiente →</button>
-
-
+            </div>
+            <div class="popup_message hidden">
+                <div class="svg">
+                    <img src="img/close.svg" alt="" class="svg-2">
+                </div>
+                <h3>Excelente! Recibimos tu calificación</h3>
+                <p>Muchas gracias por ayudarnos a mejorar</p>
             </div>
         </div>
-    </article>
+
+
+
+    </main>
+
+
+
 </body>
 <script src="index.js"></script>
 

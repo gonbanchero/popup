@@ -73,3 +73,11 @@ cerrarSvg2.addEventListener("click", () => {
   document.querySelector(".checkbox").checked = false;
   desactivar();
 });
+
+document.addEventListener("keydown", function (e) {
+  console.log(e);
+
+  if (e.key === "Escape" && !contenedor.classList.contains("hidden")) {
+    cerrarPopup();
+  }
+});
